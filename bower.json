@@ -5,6 +5,13 @@
   "homepage": "https://github.com/refactorthis/angular-component-seed",
   "license": "MIT",
   "private": true,
+  "main": [
+    "dist/component.js"
+  ],
+  "ignore": [
+    "component",
+    "**/.*"
+  ],
   "devDependencies": {
     "angular": "~1.2.x",
     "angular-mocks": "~1.2.x"
