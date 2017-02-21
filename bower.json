@@ -1,7 +1,7 @@
 {
   "name": "bgx-connectui-components",
   "description": "A bgx connect ui components and utils project for a reusable AngularJS bower component.",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "homepage": "https://github.com/refactorthis/angular-component-seed",
   "license": "MIT",
   "private": true,
