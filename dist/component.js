@@ -8,9 +8,12 @@ angular
   .module('myComponent.version', [])
   .value('version', '0.1');
 
-'use strict';
-angular
+(function() {
+    'use strict';
+	
+	angular
     .module('bgx.cmp.hello', []);
+})();
 'use strict';
 
 angular
@@ -22,23 +25,25 @@ angular
   }]);
 
 
-'use strict';
-angular
-    .module('bgx.cmp.hello')
-    .service('HelloService', HelloService);
+(function() {
+    'use strict';
+    angular
+        .module('bgx.cmp.hello')
+        .service('HelloService', HelloService);
 
-function HelloService() {
-    var hello = 'Hello ';
-    
-    this.sayHello = sayHello;
-    ////////////////
-    
-    function sayHello(name) {
-    	var str = 'noname';
-		if (name) {
-			str = name;
-		}
-		return hello + str;
+    function HelloService() {
+        var hello = 'Hello ';
+        
+        this.sayHello = sayHello;
+        ////////////////
+        
+        function sayHello(name) {
+            var str = 'noname';
+            if (name) {
+                str = name;
+            }
+            return hello + str;
+        }
     }
-}
+})();
 })();

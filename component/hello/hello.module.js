@@ -1,3 +1,6 @@
-'use strict';
-angular
+(function() {
+    'use strict';
+	
+	angular
     .module('bgx.cmp.hello', []);
+})();
